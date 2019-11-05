@@ -4,9 +4,6 @@
 Welcome to the twitter clone application using Silex. This applcation is
 built on Silex micro framework
 
-This document contains information about how to start the Silex Sleteon and 
-working of this application
-
 Funtions
 --------
 
