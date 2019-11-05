@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title '' %} - Twitter clone application</title>
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" />
+        <style>
+            body{
+
+            text-align: center;
+            }
+        </style>
+    </head>
+
+    <body class=bg>
+        <h1> Hello! Welcome to Twitter clone application using Silex </h1>
+
+        <p> In this application, the user can post the tweets by clicking "Tweet" button, delete the tweets by clicking "Delete" button and the user can logout from the application by clicking "Logout" button. The login credentials are:</br>
+        Username: myproject</br>
+        Password: welcometotwitter</br>
+
+        <h2> Log in to twitter today </h2>
+        
+        <form action="/login"  method="post">
+            <div>
+                <input value="" name="username" placeholder="username" type="text">
+            </div>
+
+            <div>
+                    <div>
+                        <input value="" name="password" placeholder="Password" type="password">
+                    </div>
+                    <br />
+                    <button type="submit">
+                        Log in
+                    </button>
+                    {% if message %}
+                        <div class="message">
+                            {{ message }}
+                        </div>
+                    {% endif %}
+            </div>
+        </form>
+
+    </body>
+</html>
